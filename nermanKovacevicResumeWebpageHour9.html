@@ -1,0 +1,212 @@
+<!--Napravio sam sliku responsive. To mi je promaklo u ranijim verzijama.
+    Sklonio sam "home stranicu", jer nema potrebe posto imam samo jednu stranicu.
+    Imao sam namjeru da napravim jos jednu stranicu pod nazivom My Work gdje bi bilo nesto sto sam radio.
+    Mislio sam napraviti button sa tekstom LinkedIn.
+    Medjutim, nisam imao vremena da napravim za svega 3 sata.
+    Proveo sam neko vrijeme radeci na responsivnes stranice. 
+    Imao sam jos nekih ideja sa box-shadow i linear-gradient ali...
+    Dodao sam link za LinkedIn profil. Stavio sam html tel i mailto da se na klik moze pozvati i poslati mail. -->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerman Kovačević </title>
+    <style>
+        .cijelaStranica {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 0px 50px 50px 50px;
+            margin: auto;
+            width: 80%;
+            height: 80%; 
+        }
+        img {
+            border-radius: 50%;
+            display: flex;
+            margin: auto;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        h3 {
+            color: #304145;
+        }
+        #slika {
+            background-color: #304145;
+            padding: 10px;
+            padding-top: 60px;
+            color: white;
+            line-height: 25px;
+        }
+        #nerman {
+            border-bottom: 1px solid blue;
+            width: 80%;
+            justify-content: center;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #radnoIskustvo {
+            padding-left: 50px;
+            padding-top: 60px;
+            padding-right: 50px;
+            border: #304145;
+            border-style: solid;
+            background: white;
+        }
+       #obrazovanje, #digitalneVjestine {
+           padding-top: 30px;
+       }
+       #digitalneVjestine {
+           text-align: justify;
+       }
+       body {
+           background: lightblue;
+       }
+       #navBar {      
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0px;
+       }
+       nav {        
+           width: 80%;
+           margin: auto;
+           height: 100%;        
+       }
+       a {
+        text-decoration: none;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+       }
+       header {
+        padding: 0px 50px 0px 50px;
+            margin: auto;
+            width: 80%;
+            height: 80%;
+       }
+       
+       @media (max-width: 600px) {
+           .cijelaStranica {
+            display: flex;
+            flex-direction: column;
+           }
+           ul {
+            display:flex;
+            flex-direction: column;
+           }
+           #navBar {
+            align-items: center;
+           }
+         #slika1 {
+             width: 100%;
+             height: auto;
+         }
+       }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navBar">
+                <li id="linkedIn"><a href="https://www.linkedin.com/in/nerman-kovacevic-4aa287125/" target="_blank"> LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cijelaStranica">
+        <div id="slika"> 
+            <img id="slika1"src="https://drive.google.com/uc?export=view&id=1k6BgrH4FbiIOELuCs7uPQyfvlDjqX9eE" alt="Loading...">
+            <h2 id="nerman">Nerman Kovačević</h2> <br>
+            <div id="informacije">
+                <ul>
+                    <li><b>Date of birth:</b> 14/09/1993</li>
+                    <li><b>Nationality:</b> Bosnian-Herzegovinian</li>
+                    <li><b>Gender: </b> Male </li>
+                </ul>
+                <br>
+            </div>
+            <div id="kontakt">
+                <h3 style="color: white;">CONTACT</h3><br>
+                <ul id="tel">
+
+                    <li><a style="color: #02D9B5; font-size: 16px;" href="tel:+38762512435"> Tel: 062 512 435</a></li>
+                    <li><a style="color: #02D9B5; font-size: 16px;"href="mailto:nermankovacevic@live.com">Mail: nermankovacevic@live.com</a></li>
+                    <li><a style="color: #02D9B5; font-size: 16px;" href="https://www.google.com/maps/place/Zlokovac,+Tuzla+75000/data=!4m2!3m1!1s0x475ead33e36316d3:0x7a8134655202f2ff?sa=X&ved=2ahUKEwiT5YzwraP2AhXtsIsKHQgtD4UQ8gF6BAgSEAE">Adresa: Đuro Đaković, Murex building, lamella CA, 7th floor, apartment 27, 75000
+                        Tuzla (Bosnia and Herzegovina) </a>
+                       </li>
+                    </ul>
+            </div>
+        </div>
+        <div id="radnoIskustvo">
+            <div id="blagajnik">
+                <h3>WORK EXPERIENCE<hr></h3>
+                <h4>Treasurer</h4>
+                <p><i>Karaka Fish Market</i></p>
+                <p>City: Tuzla</p>
+                <p>Country: Bosnia and Herzegovina</p>
+                <ul>
+                    <li>invoicing of goods</li>
+                    <li>treasury operations</li>
+                    <li>payment</li>
+                    <li>records of goods and stocks</li>
+                </ul>
+            </div>
+            <div id="agentZaOsiguranje">
+                <h4>Insurance consultant</h4>
+                <p><i>HD invest</i></p>
+                <p>City: Tuzla</p>
+                <p>Country: Bosnia and Herzegovina</p>
+                <ul>
+                    <li>communication with clients</li>
+                    <li>vehicle insurance</li>
+                    <li>insurance contracting</li>
+                    <li>finding new clients</li>
+                    <li>offering products to potential clients</li>
+                    <li>field visits to clients</li>
+                    <li>concluding insurance contracts</li>
+                </ul>  
+            </div>
+            <div id="asistent">
+                <h4>Assistant at the faculty</h4>
+                <p><i>University of Tuzla, Faculty of Philosophy</i></p>
+                <p>City: Tuzla </p>
+                <p>Country: Bosnia and Herzegovina </p>
+                <ul>
+                    <li>holding exercises for students</li>
+                    <li>consultations with students</li>
+                    <li>assistance to students in preparing seminar papers and presentations
+                    </li>
+                </ul>
+            </div>
+            <div id="trener">
+                <h4>Coach</h4>
+                <p><i>VC Sloboda</i></p>
+                <p>City: Tuzla </p>
+                <p>Country: Bosnia and Herzegovina </p>
+                <ul>
+                    <li>holding training in the women's volleyball club Sloboda</li>
+                    <li>preparation for matches</li>
+                    <li>holding matches</li>
+                </ul>
+            </div>
+            <div id="obrazovanje">
+                <h3>EDUCATION AND TRAINING<hr></h3>
+                <h4>Master of History</h4>
+                <p><i>University of Tuzla</i></p>
+                <p>Address: Tihomila Markovića 1, Tuzla 75000</p>
+            </div>
+            <div id="digitalneVjestine">
+            <h3>DIGITAL SKILLS<hr></h3>
+            <p>Microsoft office(WordExcel Powerpoint Outlook) / Microsoft execl / Microsoft Office: Word, Excel, Access, Power
+                Point, Outlook. / Google (Google earth Google Drive) / Team-working skills / Video Conferencing (Zoom Skype
+                Google Hangout) / Highly motivated / Reliable person / Good listener and communicator / c programming /
+                c++ programming / Java programming / HTML5/CSS, JavaScript </p>
+            </div>
+        </div>
+        </div>  
+    </div>
+</body>
+</html>
